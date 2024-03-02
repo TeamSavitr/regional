@@ -11,7 +11,7 @@ header{
   top: 0;
   left: 0;
   width: 90%;
-  padding-top: 1px;
+  padding-top: 100px;
   padding-bottom: 1px;
   padding: 7px 120px;
   background: white;
@@ -21,7 +21,7 @@ header{
 
 }
 header img{
-  width: 190px;
+  width: 145px;
 } 
 nav a{
   font-size: 17px;
@@ -319,9 +319,13 @@ input[type="radio"]{
 }
   
   .contact-info h2,
+  .contact-info img,
   .contact-details h2,
   .quick-menu h2 {
     margin-bottom: 20px;
+  }
+  .contact-info img{
+    width: 145px;
   }
   
   .social-links {
