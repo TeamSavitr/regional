@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Savitr | F1 in schools team</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="uploads/Teamlogo.png" class="logo"></a>
+        <nav>
+            <a href="#section1" class="active">HOME</a>
+            <a href="#section2">OUR TEAM</a>
+            <a href="#">SPONSERS</a>
+            <a href="#section4">FAQ'S</a>
+            <a href="#section5">CONTACT US</a>
+        </nav>
+    </header>
+
+    <section class="home" id="section1">
+        <div class="text-box">
+            <h1>Savitr</h1>
+            <p>we are no1 team in the entire f1 in schools</p>
+            <a href="" class="hero-btn">Follow us on instagram</a>
+        </div>
+    </section>
+
+<!--campus-->
+
+    
+<section class="TeamMembers" id="section2">
+    <h1>Meet our Team</h1>
+    <div class="gallery-wrap">
+        <img src="uploads/left-arrow.png" id="backbtn">
+        <div class="gallery">
+            <div>
+                <span><img src="uploads/team_member1.jpg" alt="Prafull Kumar"></span>
+                <span><img src="uploads/team_member1.jpg" alt="Shubham"></span>
+                <span><img src="uploads/team_member1.jpg" alt=""></span>
+            </div>
+            <div>
+                <span><img src="uploads/team_member1.jpg" alt=""></span>
+                <span><img src="uploads/team_member1.jpg" alt=""></span>
+                <span><img src="uploads/team_member1.jpg" alt=""></span>
+            </div>
+        </div>
+        <img src="uploads/right-arrow.png" id="nextbtn">
+    </div>
+    <script>
+
+    let scrollContainer = document.querySelector(".gallery");
+    let backbtn = document.getElementById("backbtn");
+    let nextbtn = document.getElementById("nextbtn");
+
+    scrollContainer.addEventListener("wheel",(evt) =>{
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+        scrollContainer.style.scrollBehavior = "auto";
+
+    });
+    nextbtn.addEventListener("click",()=>{
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft += 1000;
+        if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
+            scrollContainer.scrollLeft = 0; // Reset to beginning if reached end
+        }
+    });
+    backbtn.addEventListener("click",()=>{
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft -= 1000;
+        if (scrollContainer.scrollLeft <= 0) {
+            scrollContainer.scrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth; // Reset to end if reached beginning
+        }
+    });
+    </script>
+</section>
+
+
+<section class="FAQ" id="section4">
+    <div class="spacer-big"></div>
+<ul class="accordion">
+    <div class="text">
+    <h1>Frequently Asked Questions</h1>
+</div>
+    <li>
+        <input type="radio" name="accordion" id="first">
+        <label for="first">Products</label>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus nisl tortor. In vitae sem in orci gravida semper. Aliquam maximus ullamcorper ligula vel vehicula. Nunc tincidunt mattis metus sed fermentum. Pellentesque gravida interdum ligula pulvinar eleifend. Maecenas sit amet turpis metus.</p>
+        </div>
+    </li>
+    <li>
+        <input type="radio" name="accordion" id="second">
+        <label for="second">Products</label>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus nisl tortor. In vitae sem in orci gravida semper. Aliquam maximus ullamcorper ligula vel vehicula. Nunc tincidunt mattis metus sed fermentum. Pellentesque gravida interdum ligula pulvinar eleifend. Maecenas sit amet turpis metus.</p>
+        </div>
+    </li>
+    <li>
+        <input type="radio" name="accordion" id="third">
+        <label for="third">Products</label>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus nisl tortor. In vitae sem in orci gravida semper. Aliquam maximus ullamcorper ligula vel vehicula. Nunc tincidunt mattis metus sed fermentum. Pellentesque gravida interdum ligula pulvinar eleifend. Maecenas sit amet turpis metus.</p>
+        </div>
+    </li>
+    <li>
+        <input type="radio" name="accordion" id="fourth">
+        <label for="fourth">Products</label>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus nisl tortor. In vitae sem in orci gravida semper. Aliquam maximus ullamcorper ligula vel vehicula. Nunc tincidunt mattis metus sed fermentum. Pellentesque gravida interdum ligula pulvinar eleifend. Maecenas sit amet turpis metus.</p>
+        </div>
+    </li>
+    <li>
+        <input type="radio" name="accordion" id="fifth">
+        <label for="fifth">Products</label>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus nisl tortor. In vitae sem in orci gravida semper. Aliquam maximus ullamcorper ligula vel vehicula. Nunc tincidunt mattis metus sed fermentum. Pellentesque gravida interdum ligula pulvinar eleifend. Maecenas sit amet turpis metus.</p>
+        </div>
+    </li>
+</ul>
+</section>
+<section class="contact" id="section5">
+    <div class="container">
+        <div class="contact-info">
+            <h2>Our Team</h2>
+            <p>We are a passionate team dedicated to excellence<br> in F1 in Schools competition. Lorem ipsum dolor sit<br> amet, consectetur adipiscing elit. Nullam at libero<br> nec velit tristique accumsan. Phasellus ac magna velit.</p>
+            <ul class="social-links">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <!-- Add more social media links as needed -->
+            </ul>
+        </div>
+        <div class="contact-details">
+            <h2>Contact Details</h2>
+            <p><strong>Email:</strong> info@example.com</p>
+            <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+            <p><strong>Address:</strong> 123 Street, City, Country</p>
+        </div>
+        <div class="quick-menu">
+            <h2>Quick Menu</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="copyright">
+    <div class="copyright">
+        <img src="uploads/F1-inschools.png" alt="F1 in Schools">
+        <small>
+            Copyright © <script> document.write(new Date().getFullYear()); </script> - Savitr <br> The F1 IN SCHOOLS Logo, F1, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and related marks are trademarks of Formula One Licensing BV, a Formula One group company.  All rights reserved.
+        </small>
+    </div>
+
+
+</section>
+    
+<!--java for nav bar-->  
+<script src="script.js"></script>
+</body>
+</html>
