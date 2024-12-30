@@ -6,11 +6,41 @@
     font-style: normal;
     scroll-behavior:smooth ;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap'); /* Import Inter font */
+
+.announcement {
+  position: fixed; /* Fix at the top of the page */
+  top: 0; /* Stick to the top */
+  left: 0; /* Align to the left edge */
+  width: 100%; /* Cover the full width of the viewport */
+  background-color: #ff0000; /* Indigo 600 */
+  padding: 12px 16px; /* px-4 py-3 in Tailwind */
+  color: white; /* text-white */
+  font-family: 'Inter', sans-serif; /* Match Tailwind's default font */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.announcement p {
+  text-align: center; /* text-center */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  margin: 0; /* Reset margin */
+}
+
+.announcement a {
+  display: inline-block; /* inline-block */
+  text-decoration: underline; /* underline */
+  color: inherit; /* Inherit text color */
+}
+
+
 header{
   position: fixed;
   top: 0;
   left: 0;
   width: 90%;
+    margin-top: 40.8px;
   padding-top: 100px;
   padding-bottom: 1px;
   padding: 7px 120px;
